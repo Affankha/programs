@@ -1,0 +1,34 @@
+10.  FCFS Disk Scheduling Algo
+
+#include <stdio.h> 
+#include<math.h> 
+int size = 8;
+void FCFS(int arr[], int head) 
+{ 
+ int seek_count = 0;
+ int distance, cur_track;
+ printf("Request Queue is :\n");
+ for (int i = 0; i < size; i++) 
+ { 
+ printf("%d\n",arr[i]);
+ } 
+ for (int i = 0; i < size; i++) 
+ { 
+ cur_track = arr[i];
+ // calculate absolute distance 
+ distance = abs(cur_track - head);
+ // increase the total count 
+ seek_count += distance;
+ // accessed track is now new head 
+ head = cur_track;
+ } 
+ printf("\nTotal number of Cylinder crossed = %d\n", seek_count); 
+} 
+int main() 
+{ 
+ // request queue 
+ int arr[] = { 98, 183, 37, 122, 14, 124, 65, 67 };
+ int head = 53;
+ FCFS(arr, head);
+ return 0;
+}
