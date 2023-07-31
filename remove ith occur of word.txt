@@ -1,0 +1,17 @@
+Program to remove ith occurrence of a word in a list. 
+
+list1 = ["car", "truck", "motorcycle", "car", "car", "scooter",
+ "truck", "scooter", "motorcycle", "car"]
+i = 3
+word = "car"
+# about to delete 3rd occurrence of "car" in this list
+print("Original list :", list1)
+ind = 0
+count = 0
+while ind<len(list1):
+ if list1[ind] == word:
+  count = count + 1
+ if count == i:
+  list1.pop(ind)
+ ind = ind + 1
+print("Updated list :", list1)

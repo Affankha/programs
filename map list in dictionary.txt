@@ -1,0 +1,6 @@
+Program to map two lists into a dictionary.
+
+list1 = [1,2,3,4,5]
+list2 = ["One", "Two", "Three", "Four", "Five"]
+d = dict(zip(list1,list2))
+print(d)

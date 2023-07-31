@@ -1,0 +1,12 @@
+capitalize each word in file.
+
+fobj = open("testfile2.txt", "w")
+fobj.write("there was a king. he was very brave.")
+fobj.close()
+fobj2 = open("testfile2.txt", "r")
+s = fobj2.read()
+fobj2.close()
+s2 = s.title()
+fobj3 = open("testfile2.txt", "w")
+fobj3.write(s2)
+fobj.close()

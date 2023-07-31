@@ -1,0 +1,8 @@
+Program to count occurrence of each word of a string. 
+
+s1 = "There was a king. He was very brave."
+ls = s1.split(" ")
+set1 = set(ls)
+for word in set1:
+ c = ls.count(word)
+ print(word, " - ", c) 

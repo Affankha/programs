@@ -1,0 +1,14 @@
+Program to create a dictionary with key as first character and value as word 
+string with that character. 
+
+
+d = {}
+i = 1
+while i<=5:
+ print("Enter an alphabet")
+ alpha = input()
+ print("Enter word begins with", alpha)
+ word = input()
+ d[alpha] = word
+ i = i + 1
+print(d)

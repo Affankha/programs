@@ -1,0 +1,10 @@
+length of list using recursion.
+
+def find_list_length(lst):
+ if not lst:
+  return 0
+ else:
+  return 1 + find_list_length(lst[1:])
+my_list = [1, 2, 3, 4, 5]
+length = find_list_length(my_list)
+print(length)

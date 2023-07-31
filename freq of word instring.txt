@@ -1,0 +1,14 @@
+frequency of word count in string 
+
+def count_word_frequency(string):
+ word_list = string.split()
+ frequency_dict = {}
+ for word in word_list:
+  if word in frequency_dict:
+   frequency_dict[word] += 1
+  else:
+   frequency_dict[word] = 1
+ return frequency_dict
+input_string = "apple banana apple cat dog apple"
+frequency_result = count_word_frequency(input_string)
+print(frequency_result)

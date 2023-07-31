@@ -1,0 +1,10 @@
+Program to check if a substring is present in given string or not. 
+
+
+s1 = "There was a king. He was very brave."
+print("Enter substring to search for : ")
+s2 = input()
+if s2 in s1:
+ print("Requested substring is present")
+else:
+ print("Requested substring is not present") 
